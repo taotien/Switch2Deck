@@ -27,18 +27,38 @@ Downloads:
 - [Adoptium JRE 17](https://adoptium.net/temurin/releases) or other JRE should
   be ok, this one can also be used and is recommended for PolyMC, a great
   Minecraft launcher.
+- Emudeck
 - payloads
+
+Put all the downloads in an easy to access folder.
 
 ### Running Java & JTegraNX
 
-This is mostly where I'll differ from yuzu emulator team's instructions, the
-rest should be the same regardless of platform.
+To run the payload injector, open a terminal (default on Deck is Konsole) and
+navigate to where your downloads are. Execute java on the JTegraNX.jar file as
+root. The java binary path should be [your java download]/bin/java. You can
+press TAB to automatically fill in longer parts of file and folder names.
+
+```bash
+cd Switch2Deck
+sudo ./jdk-17.0.3+7-jre/bin/java -jar JTegraNX.jar
+```
 
 ## Step 2 - Homebrew
 
 ## Step 3 - Backups
 
 ## Step 4 - Emulation
+
+### Save files
+
+Save files are stored in a different location that what the yuzu tutorials say,
+because Emudeck (and all applications you'll install with the Discover store)
+installs the Flatpak version of your programs. All of their files will be under
+their own folders in `/home/deck/.var/app/`.
+
+After adding a game, find its ID number, then locate the save folder with the
+same ID under `~/.var/app/org.yuzu_emu.yuzu/data/yuzu/nand/user/save/[game ID]`.
 
 ---
 
